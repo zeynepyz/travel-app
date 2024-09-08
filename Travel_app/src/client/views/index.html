@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Your Adventure</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="holder headline">Plan Your Travel</h1>
+      <section class="interaction">
+        <div class="form" id="form">
+          <label for="zip">Enter City Name</label>
+          <input type="text" id="zip" placeholder="E.g., New York" />
+          <label for="date">Select Departure Date</label>
+          <input type="date" id="date" />
+          <button id="generate" type="submit">Generate Trip Info</button>
+        </div>
+        <div id="entryHolder">
+          <h2 class="title" id="title">Excited for Your Next Trip?</h2>
+        </div>
+      </section>
+    </div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch(error => {
+                console.error('Service Worker registration failed:', error);
+              });
+          });
+        }
+      </script>
+
+  </body>
+</html>
