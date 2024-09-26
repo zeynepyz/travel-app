@@ -51,7 +51,7 @@ This travel application accepts a location and departure date from the user and 
 ## Installation
 
 ### Prerequisites:
-- Node.js (for running JavaScript)
+- Node.js v22 (for running JavaScript)
 - API keys for **Geonames**, **Weatherbit**, and **Pixabay** (sign up on their respective websites to get these).
 
 ### Steps:
@@ -61,7 +61,6 @@ This travel application accepts a location and departure date from the user and 
 2. Install dependencies:
     npm install
 3. Set up environment variables:
-
     Create a .env file in the root directory.
     Add the following keys with your API information:
         GEONAMES_USERNAME=your_geonames_username
