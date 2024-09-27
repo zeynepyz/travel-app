@@ -70,3 +70,22 @@ This travel application accepts a location and departure date from the user and 
     npm start
 
 
+## Testing
+
+This project uses Jest and Supertest to ensure that the Express server works correctly. Follow the steps below to set up and run the tests.
+
+### Setting Up the Test Environment
+
+1. **Install Jest and Supertest**
+
+   You need to install Jest and Supertest in your project. Run the following command in your terminal:
+
+   ```bash
+   npm install --save-dev jest supertest
+
+2. **Run the Test Command**
+   Run the tests using the following command in your terminal:
+               npm test
+
+
+
