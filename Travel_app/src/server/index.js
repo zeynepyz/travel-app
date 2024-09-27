@@ -30,3 +30,7 @@ app.get("/", function (req, res) {
   const server = app.listen(PORT, () => {
     console.log(`Server started on port: ${PORT}`);
   });
+
+app.get('/test', (req, res) => {
+    res.status(200).json({ message: 'Server is running!' });
+});
