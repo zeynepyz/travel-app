@@ -34,7 +34,4 @@ app.get("/", function (req, res) {
 app.get('/test', (req, res) => {
     res.status(200).json({ message: 'Server is running!' });
 });
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
 module.exports = app;
